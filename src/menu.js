@@ -118,6 +118,8 @@ import TicketsFilterAdmin from './pages/TicketsFilterAdmin.svelte'
 import TicketsClosed from './pages/TicketsClosed.svelte'
 import TicketsAssigned from './pages/TicketsAssigned.svelte'
 import IncidentsRH from './pages/IncidentsRH.svelte'
+import AreasList from './pages/AreasList.svelte'
+import AreasEdit from './pages/AreasEdit.svelte'
 import SprintBoard from './pages/SprintBoard.svelte'
 import SprintsList from './pages/SprintsList.svelte'
 import SprintEdit from './pages/SprintEdit.svelte'
@@ -133,6 +135,9 @@ export const routes = {
     '/update': Update,
     '/documents': DocumentsList,
     // '/backups': Backups,
+    '/areas': AreasList,
+    '/addareas': AreasEdit,
+    '/editareas/:bid': AreasEdit,
     '/branches': BranchesList,
     '/birthdays': BirthdayList,
     '/workers': WorkersList,
@@ -618,6 +623,7 @@ export const tree = [
     {name: 'Admin', icon:'mdi mdi-block-helper', link:"javascript: void(0);", access:["admin"], useLink:false, submenu:[
         {name: 'Updates', link:"/update", useLink:true},
         {name: 'Backups', link:"/backups", useLink:true},
+        {name: 'Departamentos/Áreas', link:"/areas", useLink:true},
         {name: 'Importación Monday', link:"/import-monday", useLink:true}
     ]},
     // {name: 'Sprints (Desarrollo)', icon:'mdi mdi-ticket', link:"javascript: void(0);", useLink:false,submenu:[
