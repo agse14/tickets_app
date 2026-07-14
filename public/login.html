@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Registro / Administración / Los Olivos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    
+    <!-- jquery.vectormap css -->
+    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link rel='icon' type='image/png' href='/favicon.png'>
+     <link rel='stylesheet' href='/build/bundle.css'>
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/newapp.css" id="app-style" rel="stylesheet" type="text/css" />
+    <script defer src='/build/bundle.js'></script>
+</head>
+
+<body>
+    <div class="home-btn d-none d-sm-block">
+        <a href="index.html" class="text-dark"><i class="fas fa-home h2"></i></a>
+    </div>
+    <div class="account-pages my-5 pt-sm-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="card overflow-hidden">
+                        <div class="bg-login text-center">
+                            <div class="bg-login-overlay"></div>
+                            <div class="position-relative">
+                                <h5 class="text-white font-size-20">Bienvenido</h5>
+                                <p class="text-white-50 mb-0">Registrarse para continuar...</p>
+                                <a href="index.html" class="logo logo-admin mt-4">
+                                    <img src="assets/images/logo-sm.png" alt="" height="30">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body pt-5">
+                            <div class="p-2">
+                                <form class="form-horizontal" action="index.html">
+
+                                    <div class="form-group">
+                                        <label for="username">Nombre de usario</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Escribir nombre de usario...">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="userpassword">Contraseña</label>
+                                        <input type="password" class="form-control" id="userpassword" placeholder="Escribir contraseña...">
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                        <label class="custom-control-label" for="customControlInline">Recordarme</label>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Registrarse</button>
+                                    </div>
+
+                                    <div class="mt-4 text-center">
+                                        <a href="pages-recoverpw.html" class="text-muted"><i class="mdi mdi-lock mr-1"></i> ¿Olvidste tu contraseña?</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <p>¿No tienes cuenta? <a href="pages-register.html" class="font-weight-medium text-primary"> Darse de alta </a> </p>
+                        <p>© 2020 Design & Develop by Ingenoid.es </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyD8_GUI-Xo-RgVB5A5LMFmUt8rCdKea1ok",
+  authDomain: "medi-e4304.firebaseapp.com",
+  databaseURL: "https://medi-e4304.firebaseio.com",
+  projectId: "medi-e4304",
+  storageBucket: "medi-e4304.appspot.com",
+  messagingSenderId: "987827692516",
+  appId: "1:987827692516:web:a6f500fcdaa199d7f19df1",
+  measurementId: "G-5XRJR1D7FM"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+//firebase.analytics();
+var db = firebase.firestore();
+var timenow = firebase.firestore.FieldValue.serverTimestamp();
+</script>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    
+        <!-- form mask -->
+    
+        <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+</body>
+
+</html>

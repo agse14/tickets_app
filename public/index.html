@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sistema Tickets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Sistema Tickets" name="description" />
+    <meta content="Ingenoid.es" name="author" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- jquery.vectormap css -->
+    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css Touchspin-->
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    <!-- Bootstrap Css Select2-->
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Sweet Alert-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+
+    <!-- Responsive Table css -->
+    <link href="assets/libs/admin-resources/rwd-table/rwd-table.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Plugin calendar css -->
+    <link href="assets/libs/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+
+  <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<link rel='icon' type='image/png' href='/favicon.png'>
+  <link rel='stylesheet' href='build/bundle.css'>
+  <link href="assets/css/newapp.css" id="app-style" rel="stylesheet" type="text/css" />
+  <link href="assets/css/print.css" id="app-style" rel="stylesheet" type="text/css" media="screen, print" />
+  <!-- <link href="assets/css/output.css" rel="stylesheet" /> -->
+  <script src="assets/js/luxon.min.js"></script>
+  <script>
+    var DateTime = luxon.DateTime;
+    var Interval = luxon.Interval;
+  </script>
+  <script defer type="module" src='/build/main.js'></script>
+  
+</head>
+
+<body data-layout="detached" data-topbar="colored">
+	<main>
+
+	</main>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js"></script>
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyD8_GUI-Xo-RgVB5A5LMFmUt8rCdKea1ok",
+	  authDomain: "medi-e4304.firebaseapp.com",
+	  databaseURL: "https://medi-e4304.firebaseio.com",
+	  projectId: "medi-e4304",
+	  storageBucket: "medi-e4304.appspot.com",
+	  messagingSenderId: "987827692516",
+	  appId: "1:987827692516:web:a6f500fcdaa199d7f19df1",
+    measurementId: "G-5XRJR1D7FM"
+    
+    
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	//firebase.analytics();
+  var db = firebase.firestore();
+  var storage = firebase.storage().ref();
+  var timenow = firebase.firestore.FieldValue.serverTimestamp();
+  var functions = firebase.functions();
+
+  
+  </script>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+   
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!--Select2-->
+    <script src="assets/libs/select2/js/select2.min.js"></script>
+    <!--Sweet Alerts-->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+
+    <!-- form mask -->
+    
+    <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+   <!-- Responsive Table js -->
+   <script src="assets/libs/admin-resources/rwd-table/rwd-table.min.js"></script>
+
+       <!-- apexcharts -->
+       <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+       <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+       <script src="assets/libs/qr/qrcode.min.js"></script>
+
+ <!-- Fingerprint-->
+ <script src="assets/libs/finger/es6-shim.js"></script>
+    <script src="assets/libs/finger/websdk.client.bundle.min.js"></script>
+    <script src="assets/libs/finger/fingerprint.sdk.min.js"></script>
+</body>
+
+</html>

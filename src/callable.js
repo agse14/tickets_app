@@ -1,0 +1,1 @@
+export const fun = {deliverEquipment:firebase.functions().httpsCallable('deliverEquipment')};

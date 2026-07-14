@@ -1,0 +1,1 @@
+export const options = ["Activo", "Baja Temporal", "Baja Permanente", "Separación"];

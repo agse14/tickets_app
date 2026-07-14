@@ -1,0 +1,8 @@
+/node_modules/
+/public/build/
+/vendor/
+/template/
+/.vscode/
+
+.DS_Store
+medi-e4304.json

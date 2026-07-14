@@ -1,0 +1,247 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body[data-topbar=colored] #page-topbar {
+  background: #1f2937;
+  
+}
+
+body[data-layout=detached] #layout-wrapper::before {
+  background: #508dc7;
+  /*
+  background: linear-gradient(to bottom, #00caa2 0%,#00aeff 100%);
+  background-image: url(../../images/intro_bg.jpg);
+  */
+  z-index: -2;
+}
+body[data-layout=detached] #layout-wrapper::after {
+  background: #afd275;
+  z-index: -1;
+}
+/*
+.row {
+  background: #9c9d36;
+  color: white;
+}
+*/
+.hidden{
+  display: none;
+}
+/*TODO: Move to seed*/
+.modal-dialog .page-content{
+  padding: 5px;
+}
+
+.modal-dialog .page-title-box{
+  display: none !important;
+}
+
+.modal-dialog .col-md-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.modal-dialog .select2{
+  width: 100% !important;
+}
+
+/*END Move to seed*/
+
+.bg-login {
+  background: #1f2937;
+  padding: 60px 0px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-radius: 0px 0px 50% 50%; }
+
+.bg-login-overlay {
+  position: absolute;
+  background: #1f2937;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 50% 50%;
+  opacity: 0.8; }
+
+  .mt-5 {
+    color: #1f2937;
+  }
+
+  /* img {
+    height: 100px;
+  }
+
+  .table td, .table th {
+      vertical-align: middle;
+      padding: 0px !important;
+  }
+
+  table{
+    border: 2px #000000 solid;
+    border-collapse: inherit !important;
+    padding: 20px;
+    width:100%;
+    page-break-inside: avoid;
+} */
+
+  .modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+  }
+
+  .dropdown-menu.show {
+    overflow: auto;
+    max-height: 300px;
+  }
+
+  .btn-primary {
+    background: #1f2937;
+    border: #afd275;
+  }
+
+  .btn-primary:hover{
+    background: #508dc7;
+    border: #afd275;
+  }
+
+  .btn-print{
+    background-color: #1f2937;
+    color: white;
+  }
+
+  .waves-effect.waves-light .waves-ripple {
+    background: #1f2937;
+    color:#afd275;
+     }
+
+     .dropdown-toggle {
+      min-width: 100%;
+  }
+  
+  .form-control {
+    height: calc(1.0em + .94rem + 2px);
+    padding: .17rem .75rem;
+  }
+  .input-group-prepend {
+    height: calc(1em + 0.94rem + 2px);
+}
+.form-group {
+  margin-bottom: 0.5rem;
+  position: relative;
+  overflow: visible !important;
+}
+
+.table-responsive {
+  overflow: visible !important;
+}
+.col-form-label {
+  padding-top: calc(.17rem + 1px);
+  padding-bottom: calc(.17rem + 1px);
+}
+.dropdown-toggle{
+  padding: .17rem .75rem;
+}
+.grey-table{
+  background-image: url('../images/triangle.png');
+  background-repeat: no-repeat;
+    background-size: 75px 20px;
+    background-position: 10% 0%;
+}
+.resize h5 {
+  font-size: 100%;
+}
+
+@media print {
+  .print-no-break {
+    break-inside: avoid;
+  }
+}
+@media (max-width: 991.98px){
+body[data-layout=detached] .page-content {
+    padding: calc(70px + 0px) 5px 60px 5px;
+}
+}
+.timeline-box .vertical-line .wrapper-line {
+  height: 20px;
+}
+
+.botones-assistance .btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4px !important;
+  border-radius: 0%;
+  flex: 1;
+  font-size: 10px !important;
+}
+.botones-assistance .btn:first-child{
+  border-radius: 0% 10% 10% 0%;
+}
+.botones-assistance .btn:last-child{
+  border-radius: 10% 0% 0% 10%;
+}
+.botones-assistance{
+
+}
+.btn-confirm{
+  width: 100%;
+}
+.position{
+  font-size: 12px !important;
+}
+.card-assistance{
+  border-right: #fff 3px solid;
+  padding: 10px !important;
+}
+.no-assistance, .assistance{
+  display: flex;
+  direction: ltr;
+}
+.no-assistance button, .assistance button{
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 10px !important;
+  padding: 0 4px !important;
+  height: 30px;
+}
+.no-assistance p{
+  flex-grow: 1;
+  color: #AA2222 !important;
+}
+.assistance p{
+  flex-grow: 1;
+  font-size: 12px !important;
+}
+.finger-reader{
+  background-color: #eff2f7;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-items: center;
+  gap:20px
+}
+.finger-reader .reader-status, .finger-reader .btn{
+ display: flex;
+ flex-direction: column;
+ font-size: 10px;
+ align-items: center;
+ 
+}
+.reader-status.ok, .enroll-msg.add{
+  color: #00AA00;
+}
+.enroll-msg{
+  color: #AA2222;
+}
+.logo-sm img{
+  height: 50px;
+}

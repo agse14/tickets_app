@@ -1,0 +1,29 @@
+/*.only-print, .only-print *{
+    display: none !important;
+}*/
+
+
+@media print
+{    
+    .table td, .table th {
+        padding: 3px !important;
+    }
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    .only-print, .only-print *{
+        display: block !important;
+    }
+}
+
+@media print {
+    /* body {
+       -webkit-print-color-adjust: exact !important;
+    } */
+    .grey-table{
+     -webkit-print-color-adjust: exact !important;
+     background-color: #ccc !important;
+    }
+ }
